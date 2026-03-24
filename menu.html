@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Del Puerto | Menú</title>
+    <style>
+        :root {
+            --ancla-oro: #d4af37;
+            --azul-marino: #1a2a6c;
+            --blanco-arena: #f4f4f4;
+            --carbon: #222;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--blanco-arena);
+            color: var(--carbon);
+        }
+
+        nav {
+            background: var(--azul-marino);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .precio {
+            color: var(--azul-marino);
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- SECCIÓN: HAMBURGUESAS -->
+        <h2 style="text-align: center; font-size: 2.5em;">MENU DE HAMBURGUESAS</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="imagenes/burguera.JPEG" alt="Hamburguesa Clásica">
+                <div class="card-info">
+                    <h3>Clásica</h3>
+                    <p>Carne de res jugosa con lechuga, jitomate, queso y nuestra salsa especial.</p>
+                    <span class="precio">$99</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERB.JPEG" alt="Hamburguesa Suprema">
+                <div class="card-info">
+                    <h3>Suprema</h3>
+                    <p>Doble carne, queso cheddar, tocino crujiente, jalapeños y nuestra salsa especial.</p>
+                    <span class="precio">$135</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERC.JPEG" alt="Hamburguesa de Pollo">
+                <div class="card-info">
+                    <h3>Pollo</h3>
+                    <p>Pechuga de pollo a la parrilla, lechuga, jitomate y mayonesa especial.</p>
+                    <span class="precio">$135</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERD.JPEG" alt="Hamburguesa de Camarón">
+                <div class="card-info">
+                    <h3>Camarón</h3>
+                    <p>Camarones empanizados con salsa tártara, lechuga y jitomate fresco.</p>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERF.JPEG" alt="Hamburguesa Hawaiana">
+                <div class="card-info">
+                    <h3>Hawaiana</h3>
+                    <p>Carne de res, piña a la parrilla, queso y salsa dulce especial.</p>
+                    <span class="precio">$135</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERG.JPEG" alt="Hamburguesa Mar y Tierra">
+                <div class="card-info">
+                    <h3>Mar y Tierra</h3>
+                    <p>Carne de res y camarón, con lechuga, jitomate y salsa especial del puerto.</p>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERH.JPEG" alt="Hamburguesa Doble Carne">
+                <div class="card-info">
+                    <h3>Doble Carne</h3>
+                    <p>Dos jugosos medallones de res con queso cheddar, lechuga y nuestra salsa especial.</p>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERI.JPEG" alt="Hamburguesa BBQ Especial">
+                <div class="card-info">
+                    <h3>BBQ Especial</h3>
+                    <p>Carne de res con queso, tocino y salsa BBQ casera.</p>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BURGUERJ.JPEG" alt="Puerto Burguer">
+                <div class="card-info">
+                    <h3>Puerto Burguer</h3>
+                    <p>Carne premium con jalapeños, queso pepper jack y cebollas caramelizadas.</p>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: SUPER DOGOS -->
+        <h2 style="text-align: center; font-size: 2.5em; margin-top: 50px;">MENU DE SUPER DOGOS</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="imagenes/SUPERDOGA.JPEG" alt="Super Dogo Clásico">
+                <div class="card-info">
+                    <h3>Super Dogo Clásico</h3>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/SUPERDOGB.JPEG" alt="Super Dogo BBQ">
+                <div class="card-info">
+                    <h3>Super Dogo BBQ</h3>
+                    <span class="precio">$169</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/SUPERDOGC.JPEG" alt="Super Dogo Supremo">
+                <div class="card-info">
+                    <h3>Super Dogo Supremo</h3>
+                    <span class="precio">$199</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/SUPERDOGD.JPEG" alt="Super Dogo Mar y Tierra">
+                <div class="card-info">
+                    <h3>Super Dogo Mar y Tierra</h3>
+                    <span class="precio">$199</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN: BEBIDAS -->
+        <h2 style="text-align: center; font-size: 2.5em; margin-top: 50px;">MENU DE BEBIDAS</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="imagenes/BEBIDAA.JPEG" alt="Coca-Cola Regular">
+                <div class="card-info">
+                    <h3>Coca-Cola Regular</h3>
+                    <p>355 ml</p>
+                    <span class="precio">$35</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BEBIDAB.JPEG" alt="Coca-Cola Light">
+                <div class="card-info">
+                    <h3>Coca-Cola Light</h3>
+                    <p>355 ml</p>
+                    <span class="precio">$35</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BEBIDAC.JPEG" alt="Jugo de Naranja">
+                <div class="card-info">
+                    <h3>Jugo de Naranja</h3>
+                    <p>500 ml</p>
+                    <span class="precio">$35</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagenes/BEBIDAD.JPEG" alt="Botella de Agua Natural">
+                <div class="card-info">
+                    <h3>Bot. de Agua Natural</h3>
+                    <p>500 ml</p>
+                    <span class="precio">$29</span>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
